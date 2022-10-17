@@ -10,6 +10,7 @@ int main(void)
 	for (; x < 10; x++)
 	{
 		printf("%d", x);
+		printf("\n");
 	}
 	return (0);
 }
