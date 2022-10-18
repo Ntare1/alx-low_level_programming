@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_sign - checks sign of number
+ * print_sign -prints sign of number
  * @n: number to be checked
  * Return: 0 when 0 1 when + and -1 when -
  */
@@ -13,7 +13,7 @@ int print_sign(int n)
 	}
 	else if (n == 0)
 	{
-		_putchar ('0');
+		_putchar (48);
 		return (0);
 	}
 	else
