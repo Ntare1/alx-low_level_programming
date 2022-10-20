@@ -16,4 +16,5 @@ int print_last_digit(int r);
 void jack_bauer(void);
 void times_table(void);
 int add(int a, int b);
+void positive_or_negative(int i);
 #endif
