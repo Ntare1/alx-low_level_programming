@@ -6,6 +6,6 @@
  */
 void _puts(char *str)
 {
-	if (*str != '\0')
+	while (*str)
 		_puts(str);
 }
