@@ -6,9 +6,13 @@
  */
 void print_rev(char *s)
 {
-	for (*s = 'z'; *s >= 'a'; *s--)
+	int le = 0;
+
+	while (s[le] != '\0')
+		le++;
+	for (le = le; le >= 0; le--)
 	{
-		_putchar(*s);
+		_putchar(s[le]);
 	}
 	_putchar('\n');
 }
