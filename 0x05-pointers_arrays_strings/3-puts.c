@@ -6,7 +6,6 @@
  */
 void _puts(char *str)
 {
-	str = "string!";
-
-	_puts(str);
+	if (*str != '\0')
+		_puts(str);
 }
