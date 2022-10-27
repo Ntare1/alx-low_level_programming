@@ -6,15 +6,14 @@
  */
 void reverse_array(int *a, int n)
 {
-	int x[n];
+	int x;
 	int y;
 
 	for (y = 0; y < n; y++)
 	{
-		x[n - 1 - y] = a[n];
-	}
-	for (y = 0; y < n; y++)
-	{
-		a[y] = x[y];
+		n--;
+		x = a[y];
+		a[y] = a[n];
+		a[n] = x;
 	}
 }
