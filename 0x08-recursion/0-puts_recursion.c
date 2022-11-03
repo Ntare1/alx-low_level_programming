@@ -6,9 +6,13 @@
  */
 void _puts_recursion(char *s)
 {
-	write(1, &s, 1);
-}
-void main(void)
-{
-	_puts_recursion('1');
+	if (*s)
+	{
+		_putchar(*s);
+		_puts_recursion(s + 1);
+	}
+	else
+	{
+		_putchar('\n');
+	}
 }
