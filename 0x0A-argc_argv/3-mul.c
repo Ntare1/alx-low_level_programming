@@ -6,20 +6,21 @@
  * @argv: input arguments
  * Return: 0
  */
-int main(int argc, char *arg[])
+int main(int argc, char *argv[])
 {
-	int x = 2;
-	int y = 2;
-	int z = x * y;
+	int x;
+	int y;
 
-	if (argc <= 3)
+	if (argc == 3)
 	{
-		printf("%d\n", z);
+		x = atoi(argv[1]);
+		y = atoi(argv[2]);
+		printf("%d\n", x * y);
+		return (0);
 	}
 	else
 	{
 		printf("Error\n");
 		return (1);
 	}
-	return (0);
 }
