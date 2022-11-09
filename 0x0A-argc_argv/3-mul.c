@@ -1,10 +1,11 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main- entry point
  * @argc: counts the arguments
  * @argv: input arguments
- * Return: 0
+ * Return: 0 when true 1 when false
  */
 int main(int argc, char *argv[])
 {
