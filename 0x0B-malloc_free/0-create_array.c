@@ -16,14 +16,12 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-	x = malloc(size * sizeof(char);
-			if (x == 0)
-			{
-			return (NULL);
-			}
-			for (y = 0; y < size; y++)
-			{
-			x[y] = c;
-			}
-			return (size);
-			}
+	x = malloc(size * sizeof(char));
+	if (x == 0)
+		return (NULL);
+	for (y = 0; y < size; y++)
+	{
+		x[y] = c;
+	}
+	return (x);
+}
