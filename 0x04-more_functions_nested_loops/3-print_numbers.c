@@ -1,7 +1,8 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
  * print_numbers- prints numbers
+ * Return: the numbers to be printed
  */
 void print_numbers(void)
 {
@@ -12,6 +13,5 @@ void print_numbers(void)
 		_putchar(x + '0');
 	}
 	_putchar('\n');
-
 }
 
