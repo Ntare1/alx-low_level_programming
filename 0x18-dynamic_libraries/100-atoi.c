@@ -5,4 +5,6 @@
  * @s: the pointer to convert
  * Return: 0
  */
- int _atoi(char *s)
+int _atoi(char *s)
+{
+}
