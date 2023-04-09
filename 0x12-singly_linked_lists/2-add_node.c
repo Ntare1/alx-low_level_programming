@@ -20,7 +20,7 @@ list_t *add_node(list_t **head, const char *str)
 
 	if (head != NULL && str != NULL)
 	{
-		inter = malloc(sizeof(list_t);
+		inter = malloc(sizeof(list_t));
 				if (inter == NULL)
 				return (NULL);
 
