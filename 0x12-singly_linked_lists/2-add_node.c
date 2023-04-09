@@ -12,6 +12,10 @@
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *inter;
+	int le = 0;
+
+	while (str[le])
+		le++;
 
 	if (head != NULL && str != NULL)
 	{
@@ -20,7 +24,7 @@ list_t *add_node(list_t **head, const char *str)
 				return (NULL);
 
 				inter->str = strdup(str);
-				inter->len = _strlen(str);
+				inter->len = le;
 				inter->next = *head;
 
 				*head = inter;
@@ -30,18 +34,3 @@ list_t *add_node(list_t **head, const char *str)
 	return (0);
 }
 
-/**
- * _strlen- calculates the length of a string
- * @s:string
- * Return: leng of the string
- */
-int _strlen(char *s)
-{
-	int le = 0;
-
-	while (s[le] != '\0')
-	{
-		le++;
-	}
-	return (le);
-}
