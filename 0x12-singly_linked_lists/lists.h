@@ -17,6 +17,8 @@ typedef struct list_s
 	struct list_s *next;
 } list_t;
 
+list_t *add_node_end(list_t **head, const char *str);
+int _strlen1(const char *s);
 list_t *add_node(list_t **head, const char *str);
 int _strlen(char *s);
 size_t print_list(const list_t *h);
