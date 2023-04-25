@@ -22,9 +22,9 @@ hash_table_t *hash_table_create(unsigned long int size)
 	if (create->array == NULL)
 		return (NULL);
 
-	for (x = 0; x < create->size; x++)
+	for (x = 0; x < size; x++)
 	{
-		create->array = NULL;
+		create->array[x] = NULL;
 	}
 
 	return (create);
