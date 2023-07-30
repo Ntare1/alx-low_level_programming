@@ -1,2 +1,2 @@
 #!/bin/bash
-low leve programming
+C programming(low level)
