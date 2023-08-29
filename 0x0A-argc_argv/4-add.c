@@ -19,8 +19,8 @@ int main(int argc, char *argv[])
 		printf("0\n");
 	else
 	{
-		sum = 0;
-		for (x = 1; x < argc; i++)
+		add = 0;
+		for (x = 1; x < argc; x++)
 		{
 			ptr = argv[x];
 			length = strlen(ptr);
