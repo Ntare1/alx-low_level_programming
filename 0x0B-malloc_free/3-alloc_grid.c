@@ -4,15 +4,15 @@
 
 /**
  * alloc_grid- Function that returns a pointer to a matrix
- *@width: rows
- *@height: columns
+ * @width: rows
+ * @height: columns
  * Return: a pointer / NULL
  */
 int **alloc_grid(int width, int height)
 {
 	int x, y, z;
 	int *ptr;
-    int **matrix;
+	int **matrix;
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
