@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * argstostr-links for together 
+ * argstostr-links for together
  * @ac: number av
  * @av: arguments
  * Return: pointer
