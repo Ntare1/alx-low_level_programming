@@ -19,7 +19,7 @@ int main(int argc, char *argv[]) {
 
     void *mainx = main;
 
-    for (int i = 0; i < x; i++) {
+    for (i = 0; i < x; i++) {
         unsigned char opcode;
         int result = *((unsigned char *)(mainx + i));
 
