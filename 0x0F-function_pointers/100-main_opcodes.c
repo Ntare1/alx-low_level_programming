@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h>
+#include "function_pointers"
 
 int main(int argc, char *argv[]) {
-    int x, 1;
+    int x, i;
     
     if (argc != 2) {
         printf("Error\n");
