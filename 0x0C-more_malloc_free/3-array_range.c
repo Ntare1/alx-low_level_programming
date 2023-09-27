@@ -4,26 +4,26 @@
 
 /**
  * array_range- function that creates an array of integer
- * @min: lowest integer 
+ * @min: lowest integer
  * @max: highest integer
  * Return: pointer
  */
 int *array_range(int min, int max)
 {
-	int *mem-blk;
+	int *mem_blk;
 	int x, y = 0;
 
 	if (min > max)
 		return (NULL);
-	mem-blk = malloc(sizeof(*mem-blk) * ((max - min) + 1));
-	if (mem-blk != NULL)
+	mem_blk = malloc(sizeof(*mem_blk) * ((max - min) + 1));
+	if (mem_blk != NULL)
 	{
 		for (x = min; x <= max; x++)
 		{
-			mem-blk[y] = x;
+			mem_blk[y] = x;
 			y++;
 		}
-		return (mem-blk);
+		return (mem_blk);
 	}
 	else
 		return (NULL);
