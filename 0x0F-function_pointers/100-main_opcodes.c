@@ -2,35 +2,47 @@
 #include <stdlib.h>
 #include "function_pointers.h"
 
-int main(int argc, char *argv[]) {
-    int x, i;
-    
-    if (argc != 2) {
-        printf("Error\n");
-        return (1);
-    }
+/**
+ * main- function that prints opcode
+ * @argc: number of arguments
+ * @argv: array of arguments
+ * Return: int
+ */
+int main(int argc, char *argv[])
+{
+	int x, i;
 
-    x = atoi(argv[1]);
+	if (argc != 2)
+	{
+		printf("Error\n");
+		return (1);
+	}
 
-    if (x < 0) {
-        printf("Error\n");
-        return (2);
-    }
+	x = atoi(argv[1]);
 
-    void *mainx = main;
+	if (x < 0)
+	{
+		printf("Error\n");
+		return (2);
+	}
 
-    for (i = 0; i < x; i++) {
-        unsigned char opcode;
-        int result = *((unsigned char *)(mainx + i));
+	void *mainx = main;
 
-        printf("%02x", result);
+	for (i = 0; i < x; i++)
+	{
+		unsigned char opcode;
+		int result = *((unsigned char *)(mainx + i));
 
-        if (i < x - 1) {
-            printf(" ");
-        } else {
-            printf("\n");
-        }
-    }
+		printf("%02x", result);
+		if (i < x - 1)
+		{
+			printf(" ");
+		}
+		else
+		{
+			printf("\n");
+		}
+	}
 
-    return 0;
+	return (0);
 }
