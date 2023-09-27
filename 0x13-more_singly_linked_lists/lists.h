@@ -18,6 +18,8 @@ typedef struct listint_s
 	struct listint_s *next;
 } listint_t;
 
+size_t listint_len(const listint_t *h);
+int check_ptr(const listint_t *ptr, listint_t **array, unsigned int size);
 size_t print_listint_safe(const listint_t *head);
 listint_t *reverse_listint(listint_t **head);
 size_t print_listint(const listint_t *h);
