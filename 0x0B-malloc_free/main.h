@@ -3,6 +3,9 @@
 
 #include <stdio.h>
 
+int len(char *str);
+int num_words(char *str);
+char **strtow(char *str);
 char *_strdup(char *str);
 char *create_array(unsigned int size, char c);
 char *str_concat(char *s1, char *s2);
