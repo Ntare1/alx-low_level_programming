@@ -1,1 +1,0 @@
-pointers, stringd and arrays
