@@ -1,0 +1,1 @@
+Singly linked list: It's a collection of nodes where each node contains two parts: data and a reference (or link) to the next node in the sequence. The first node is called the head, and the last node typically points to null, indicating the end of the list.
