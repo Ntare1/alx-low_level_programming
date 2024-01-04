@@ -35,11 +35,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 
 	bytsprinted = write(STDOUT_FILENO, message, bytscanned);
-	
-	if(bytsprinted != bytscanned) | (bytsprinted = NULL)
-	(
-return (0);
-)
+
+	if ((bytsprinted != bytscanned) || (bytsprinted == -1))
+	{
+		return (0);
+	}
 
 	free(message);
 
