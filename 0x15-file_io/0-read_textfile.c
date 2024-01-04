@@ -10,6 +10,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int ptr;
 	ssize_t bytscanned;
+	ssize_t bytsprinted;
 	char *message;
 
 	ptr = open(filename, O_RDONLY);
@@ -33,7 +34,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	write(STDOUT_FILENO, message, letters);
+	bytsprinted = write(STDOUT_FILENO, message, bytscanned);
+	
+	if(bytsprinted != bytscanned) | (bytsprinted = NULL)
+	(
+return (0);
+)
 
 	free(message);
 
